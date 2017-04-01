@@ -1,0 +1,42 @@
+Basically any of the methods below will require you to use a text editor to write your code. The editor we used in class is Atom, and is availible on essentially any operating system from https://atom.io/. Other text editors that could be used include Sublime (https://www.sublimetext.com/), Notepad++ (https://notepad-plus-plus.org/), or Leafpad (http://tarot.freeshell.org/leafpad/). Notepad, Wordpad, Notes, TextEdit, Microsoft Word or Google Docs are not the best options, as they don't highlight syntax, and often add extra formatting characters. Once you have selected a text editor, write your code, usually starting with a "main.cpp" file, and being sure to include any aditional files at the top of Main. Then see below for compile instructions for your operating system.
+
+1. Mac OSX
+  This one is almost the easiest, as it is what we did in class. You will need to install SFML, but the simplest way to do this is to install homebrew first. This can be done by opening a terminal and running the command:
+  
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  
+More information can be found at https://brew.sh/. After homebrew is installed, open your terminal and run 
+  
+  brew install sfml
+
+After that, navigate your terminal to the location where your code is saved, and run the command
+  
+  g++ main.cpp -o <executable> -lsfml-graphics -lsfml-system -lsfml-window
+
+where <executable> is the name of your program you want compiled. Remember that if you are using sounds or music you also need to add '-lsfml-audio' to the end of the command. You can then run your program from the same terminal with 
+  
+  ./<executable>
+
+again, where <executable> is the name of your program.
+
+-
+
+2. Linux - (Ubuntu, Rasbian, or other)
+  This should be pretty much the same. Install SFML by opening a terminal and running:
+  
+  sudo apt-get install libsfml-dev
+
+Then navigate to the directory where your code is saved and run:
+
+  g++ main.cpp -o <executable> -lsfml-graphics -lsfml-system -lsfml-window
+
+where <executable> is the name of your program you want compiled. Remember that if you are using sounds or music you also need to add '-lsfml-audio' to the end of the command. You can then run your program from the same terminal with 
+  
+  ./<executable>
+
+again, where <executable> is the name of your program.
+
+-
+
+3. Windows
+  This one is a bit trickier, because Windows does not include a native bash terminal. It can be done following the instructions at https://www.sfml-dev.org/tutorials/2.4/, but this includes installing either Code::Blocks or Visual Studio, both of which are good, but involve a very different workflow than what we practiced in class. I'm working on trying to put together a simple way to compile and run our programs more like we did in class, but it isn't yet working reliably.
