@@ -1,0 +1,76 @@
+Git instructions:
+
+1. Mac OSX
+  Open a terminal, attempt to run the command 
+  
+  git
+  
+On most newer versions of OSX it should then prompt you through the process of installing git. You can then clone a repository from Github with the command:
+
+  git clone <repository url>
+  
+where <repository url> is the url of the repository, usually in the form 
+  
+  https://github.com/<username>/<repository name>
+  
+Note that if you have made changes to the repository from another computer since last time you pushed from your current computer, you should run
+
+  git pull
+  
+before making changes. This will bring your local copy of the code up to the same point as that on Github. Once you have made your changes, you can save your changes by running the three following commands:
+
+  git add *
+  git commit -m "<message>"
+  git push
+  
+where <message> is a short message about what changes you have made. Be sure to include the quotation marks.
+
+-
+
+2. Ubuntu
+  Install Git by opening a terminal and running
+  
+  sudo apt-get install git
+  
+In many cases, it may already be installed. You can then clone a repository from Github with the command:
+
+  git clone <repository url>
+  
+where <repository url> is the url of the repository, usually in the form 
+  
+  https://github.com/<username>/<repository name>
+  
+Note that if you have made changes to the repository from another computer since last time you pushed from your current computer, you should run
+
+  git pull
+  
+before making changes. This will bring your local copy of the code up to the same point as that on Github. Once you have made your changes, you can save your changes by running the three following commands:
+
+  git add *
+  git commit -m "<message>"
+  git push
+  
+where <message> is a short message about what changes you have made. Be sure to include the quotation marks.
+
+-
+
+3. Windows
+  As usual, Windows is a bit different. Download and install Git for Windows from https://git-for-windows.github.io/, then install it. This will create three different programs, Git GUI, Git Bash and Git Shell (or Git CMD). Git GUI is a window-based program which will help you maintain your repositories, Git CMD allows you to manage repositories from the Windows Command Prompt, and Git Bash is a terminal that will accept essentially the same commands as the Linux and Mac terminals. For this guide we will use Git Bash. You can then clone a repository from Github with the command:
+
+  git clone <repository url>
+  
+where <repository url> is the url of the repository, usually in the form 
+  
+  https://github.com/<username>/<repository name>
+  
+Note that if you have made changes to the repository from another computer since last time you pushed from your current computer, you should run
+
+  git pull
+  
+before making changes. This will bring your local copy of the code up to the same point as that on Github. Once you have made your changes, you can save your changes by running the three following commands:
+
+  git add *
+  git commit -m "<message>"
+  git push
+  
+where <message> is a short message about what changes you have made. Be sure to include the quotation marks.
